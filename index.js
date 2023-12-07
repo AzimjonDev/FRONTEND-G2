@@ -1,49 +1,47 @@
-// let a = 20;
-// let b = a + a + 40 + "20" + (a + a) + String(a) // 80204020
 
-// console.log(a);
-// console.log(b);
+// function res(a,b,c,d) {
+//   return  ` bug'da ${a+d} bor va  ${b+d} ham bor`
+// }
 
-// let a = 30;
-// let b = Number("20")
-
-// let x=20;
-// let y=30;
-// let result=y+x
+// console.log( res("gul","lola","bola","lar"));
 
 
+// function monkeyTrouble(aSmile, bSmile){
+//   return aSmile==bSmile
+// }
 
-// console.log(result);
-
-
-// let x=20;
-// let y=30;
-// let result=y-x;
-// console.log(result);
-
+// console.log(monkeyTrouble(true, true))// → true
+// console.log(monkeyTrouble(false, false)) //→ true
+// console.log(monkeyTrouble(true, false))// → false
 
 
-// let x=20;
-// let y=30;
-// let result=y*x;
-// console.log(result);
-
-
-// let x=20;
-// let y=30;
-// let result=y/x;
-// console.log(resul
-
-// let y=30;
-// let result=Math.pow(y)
-// console.log(result);
+// if else //
+// function  res(enter,age1,age2,age3) {
+//   if( age2 == age1 && age3 ==enter || enter==age2){
+//     console.log(true);
+//   }else{
+//     console.log(false);
+//   }
+// }
+// res(30,30,30,400)
 
 
 
-function sum(a,b,c) {
-  return  a+b*c
+function  res(enter ,age1) {
+  if( enter <= age1 ){
+    console.log("Ruxsat");
+  }else{
+    console.log("Ruxsat yo'q");
+  }
 }
+res(18,18)
+res(20,19)
+res(50,31)
 
 
 
-console.log( sum(10,20,30));
+// =
+// ==
+// ===
+// &&
+// ||
