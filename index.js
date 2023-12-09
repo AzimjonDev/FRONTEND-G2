@@ -27,16 +27,16 @@
 
 
 
-function  res(enter ,age1) {
-  if( enter <= age1 ){
-    console.log("Ruxsat");
-  }else{
-    console.log("Ruxsat yo'q");
-  }
-}
-res(18,18)
-res(20,19)
-res(50,31)
+// function  res(enter ,age1) {
+//   if( enter <= age1 ){
+//     console.log("Ruxsat");
+//   }else{
+//     console.log("Ruxsat yo'q");
+//   }
+// }
+// res(18,18)
+// res(20,19)
+// res(50,31)
 
 
 
@@ -45,3 +45,11 @@ res(50,31)
 // ===
 // &&
 // ||
+function sum(params) {
+  let a=20;
+	console.log(b);
+	let b=30;
+	var d=40
+}
+console.log(d);
+sum()
