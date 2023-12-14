@@ -1,7 +1,7 @@
 
 let a=-2;
 let b=3;
-let c=-4;!~
+let c=-4;
 
 
 if(a<0 ){
