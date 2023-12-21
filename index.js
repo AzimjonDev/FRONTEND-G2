@@ -1,59 +1,23 @@
-// let str="uzbekistan"
+// let oquvchi1="Boburbek";
+// let oquvchi2="Arslonbek";
+// let oquvchi3="Jamshidbek";
 
-// console.log(str.replace(str,"O'ZBEKISTON"));
-
-// let str ="s.a.l.o.m"
-// console.log(str.replaceAll("."," "));
-
-//      //  0123456789
-// let str="uzbekistan"
-// console.log(str.charAt(5));
+// console.log("oddiy:",oquvchi1);
 
 
-// let str="uzbekistan";
-// console.log(str.length);
+// array//massive
 
-// let str="uzbekistan"
-// console.log(str.includes("l"));
+let oquvchi=["Boburbek","Arslonbek","Jamshidbek",1,4,true,false,null ,12]
 
+console.log(oquvchi[oquvchi.length-1]);
 
-// let str="uzbekistan"
-// console.log(str.indexOf("n"));
-
-
-// let str="uzbekistan"
-// console.log(str.lastIndexOf("u"));
-
-// let str="uzbekistan "
-// console.log(str.repeat());
+// let str=" Salom"
+// console.log(oquvchi[0].concat(str));
 
 
-// let str="uzbekistan"
-// console.log(str.slice());
-
-
-// let str="uzbekistan"
-// console.log(str.split([]));
-
-
-
-// let str="uzbekistan"
-// console.log(str.substring(1,9));
-
-
-
-// let str=" uzbekistan  "
-// console.log(str.length);
-// console.log(str.trim().length);
-
-
-// function parrotTrouble(talking, hour){
-//      return talking&&(hour<7||hour>20)
-// }
-
-// console.log(parrotTrouble(true, 6)); //→ true
-// console.log(parrotTrouble(true, 7)); //→ false
-// console.log(parrotTrouble(false, 6) );//→ false
-
-
-
+let str=" Salom"
+oquvchi.push(str);
+oquvchi.pop(str)
+oquvchi.unshift(str)
+oquvchi.shift();
+console.log(oquvchi);
