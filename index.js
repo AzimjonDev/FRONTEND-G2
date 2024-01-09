@@ -45,9 +45,50 @@
 // array1.sort();
 // console.log(array1);
 
-const array1 = [1, 2, 3, 4];
- console.log(  array1)
+// const array1 = [1, 2, 3, 4];
+//  console.log(  array1)
 
 
 
-console.log(array1);
+for(let i=0; i <=int; i++){
+    console.log(i);
+}
+
+
+// const array = [3, 1, 2, 4, 0];
+
+// function customSortOnce(array) {
+//   for (let i = 0; i < array.length - 1; i++) {
+//     if (array[i] > array[i + 1]) {
+//       const temp = array[i];
+//       array[i] = array[i + 1];
+//       array[i + 1] = temp;
+//     }
+//   }
+// }
+
+
+
+// customSortOnce(array);
+
+// console.log(array);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
