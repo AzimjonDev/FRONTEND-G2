@@ -1,89 +1,42 @@
-// let oquvchi1="Boburbek";
-// let oquvchi2="Arslonbek";
-// let oquvchi3="Jamshidbek";
-
-// console.log("oddiy:",oquvchi1);
-
-
-// array//massive
-
-// let oquvchi=["Boburbek","Arslonbek","Jamshidbek",1,4,true,false,null ,12]
-
-// console.log(oquvchi[oquvchi.length-1]);
-
-// let str=" Salom"
-// console.log(oquvchi[0].concat(str));
-
-
-// let str=" Salom"
-// oquvchi.push(str);
-// oquvchi.pop(str)
-// oquvchi.unshift(str)
-// oquvchi.shift();
-// console.log(oquvchi);
 
 
 
+// const nums=[1,2,3,4,5,]
+//     nums.reverse();
+// console.log(nums);
 
-// const array1 = [1, 4, 9, 16];
-// const map1 = array1.map((x) => x * 2);
-// console.log(map1);
+// let sum= nums.reduce((a,c)=>{
+//    return a+c
+// })
+// console.log(sum)
 
-// const words = ['spray', 'elite', 'exuberant', 'destruction', 'present'];
+//  nums.forEach((item,idx)=>{
+// console.log(item+2,);
+//  })
 
-// const result = words.filter((word) => word.length >= 6);
-
-// console.log(result);
-
-
-// const months = ['March', 'Jan', 'Feb', 'Dec'];
-// months.sort();
-// console.log(months);
-// // Expected output: Array ["Dec", "Feb", "Jan", "March"]
-
-// const array1 = [1, 3, 4, 2, 1];
-// array1.sort();
-// console.log(array1);
-
-// const array1 = [1, 2, 3, 4];
-//  console.log(  array1)
-
-
-
-for(let i=0; i <=int; i++){
-    console.log(i);
-}
-
-
-// const array = [3, 1, 2, 4, 0];
-
-// function customSortOnce(array) {
-//   for (let i = 0; i < array.length - 1; i++) {
-//     if (array[i] > array[i + 1]) {
-//       const temp = array[i];
-//       array[i] = array[i + 1];
-//       array[i + 1] = temp;
-//     }
-//   }
+// const nums=[1,2,3,4,5,6]
+// const sum=[1,2,23,44,4]
+// const res=nums.reduce((p,c)=>{
+//   return p + c
 // }
 
+// )
+// console.log(res);
+// const res=nums.concat(sum).reverse()
+// console.log(nums);
+// console.log(res);
+// let ward=['salom dunyo',"guli"]
 
+// ward.reverse();
+// console.log(ward);
 
-// customSortOnce(array);
-
-// console.log(array);
-
-
-
-
-
-
-
-
-
-
-
-
+const str='salom dunyo'
+const res=str
+.split('')
+.reverse()
+.join(' ');
+ 
+console.log(res);
 
 
 
