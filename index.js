@@ -1,16 +1,62 @@
-let btn = document.querySelector(".btn");
-let box=document.querySelector(".container")
-let text=document.querySelector("#onn")
-console.log(text);
+let modal = document.querySelector(".modal");
+let input = document.querySelector("#input");
+const btn = document.querySelector(".btn");
+let text = document.querySelector(".text");
+const on = document.querySelector("#on");
+
+const inp=document.querySelector("#inp")
+
+
+
 
 btn.addEventListener("click", () => {
-   
-    box.classList.toggle("radius");
-     btn.textContent="Light"
-    })
+    modal.classList.toggle("hidden");
+});
 
-    text.addEventListener("click",()=>{
-        box.classList.toggle("radius")
-        text.textContent="kubik"
-    })
+on.addEventListener("click",()=>{
+    text.textContent= input.value
+    input.value=""
+    modal.classList.toggle("hidden");
+    
+})
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// btn.addEventListener("click", () => {
+   
+//     })
+
+//     text.addEventListener("click",()=>{
+//         box.classList.toggle("radius")
+//         text.textContent="kubik"
+//     })
 
