@@ -42,3 +42,10 @@
     
     font-size: 14px;
      }
+
+     #id{
+      border-top: none;
+      border-left:none ;
+      border-right:none ;
+
+     }
