@@ -1,55 +1,31 @@
-let item=document.querySelector(".item")
-let head=document.querySelector(".head")
-
-
-// let box=item.getAttribute("href")
-
-// item.setAttribute("href","https://uzum.uz/ru")
-
-// /** createElement */
-// Creating a button element
-const element = document.createElement("button");
-element.innerHTML = "I Am Button";
-
-
-document.body.appendChild(element);
-
-const h1 = document.createElement("h1");
-h1.innerHTML = "Salom";
-
-
-document.body.button.appendChild(h1);
-console.log(h1);
+let tavakkalSon=document.querySelector(".tavakkalSon")
+let oylanganSon=document.querySelector(".oylanganSon")
+let btn=document.querySelector(".btn")
+// console.log(btn);
 
 
 
-      
+let randomNumber=Math.trunc(Math.random()*10)+1;
+tavakkalSon.value=randomNumber
+
+
+function randomColor() {
+    var letters = "0123456789ABCDEF";
+    var color = "#";
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+console.log(randomColor());
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+btn.addEventListener("click",()=>{
+    if(tavakkalSon.value==oylanganSon.value){
+        document.body.style.background="#0E614C"
+    }
+})
 
 
