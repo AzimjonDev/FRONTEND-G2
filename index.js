@@ -1,31 +1,78 @@
-let tavakkalSon=document.querySelector(".tavakkalSon")
-let oylanganSon=document.querySelector(".oylanganSon")
-let btn=document.querySelector(".btn")
-// console.log(btn);
+let newGame = document.querySelector(".newGame");
+let oylanganSon = document.querySelector(".oylanganSon");
+let reset = document.querySelector(".reset");
+let btnTekshirish = document.querySelector(".buttonBlack");
+let hozirgiBall = document.querySelector(".ball");
+let yuqoriBall = document.querySelector(".yuqoriBall");
+let tahminQlish = document.querySelector(".taxminQilish");
+let tahminSon = document.querySelector(".guess").value;
+// console.log(tahminQlish);
 
 
 
-let randomNumber=Math.trunc(Math.random()*10)+1;
-tavakkalSon.value=randomNumber
+const repeat=()=>{
+  score--;
+  hozirgiBall.textContent = score;
 
-
-function randomColor() {
-    var letters = "0123456789ABCDEF";
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
 }
-console.log(randomColor());
+let rendomNumber = Math.trunc(Math.random() * 20) + 1;//20
 
+let score = 20;
+let highScore = 0;
 
+console.log(rendomNumber);
 
-
-btn.addEventListener("click",()=>{
-    if(tavakkalSon.value==oylanganSon.value){
-        document.body.style.background="#0E614C"
+btnTekshirish.addEventListener("click", () => {
+  let tahminSon = Number(document.querySelector('.guess').value) ;
+   if ( score>1) {
+    if(!tahminSon){
+      alert(" son kritilmadi")
+    } else if(rendomNumber == tahminSon){
+        if(score>highScore){
+          highScore = score;
+          yuqoriBall.textContent = score
+        }
+        document.body.style.backgroundColor = '#60b347';
+        tahminQlish.textContent = "Taxmin son tog'ri";
+        yuqoriBall.textContent = highScore;
+        Number.textContent = rendomNumber;
+        let tahminSon = document.querySelector(".guess").value=""
+    }else if(tahminSon>20){
+       alert("son 20 katta")
     }
-})
+   else if( tahminSon > rendomNumber){
+    tahminQlish.textContent = "Taxmin qlingan soningiz katta";
+    tahminSon.value = "";   
+  repeat()
+  }else if(tahminSon<rendomNumber){
+    tahminQlish.textContent = "Taxmin qlingan soningiz kichkina"
+    tahminSon= "";   
+    repeat()
+  }
+  } else{
+   score--;
+  hozirgiBall.textContent = score;
+  console.log('Bal tugadi');
+  btnTekshirish.setAttribute('disabled', true);
+  btnTekshirish.style.cursor = 'not-allowed';
+  tahminQlish.textContent = '😒 Ball tugadi.';
+  oylanganSon.textContent = rendomNumber;
+  Number.value=""
+  }
+});
+
+newGame.addEventListener("click",(e)=>{
+   document.body.style.background="white";
+   oylanganSon.textContent = "?"
+   tahminQlish.textContent ="Taxmin qlish...";
+   let tahminSon = document.querySelector(".guess").value;
+   Number.textContent=rendomNumber
+   yuqoriBall.textContent=score
+   score=20
+   hozirgiBall.textContent=score
+   rendomNumber=Math.trunc(Math.random()*20)+1;
+   console.log(rendomNumber);
+   
+  })
 
 

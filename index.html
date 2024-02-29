@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
-		<title>Lesson-47</title>
-	</head>
-	<body>
-		<input class="tavakkalSon" type="text">
-		<input class="oylanganSon" type="text">
-		<br>
-		<br>
-		<button class="btn">Tekshrish</button>
-	</body>
-	<script src="./index.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lesson-47</title>
+  </head>
+
+  <body>
+    <div class="continer-fluyid">
+      <nav>
+        <button class="newGame">Yana</button>
+        <span>(oraliq 1 dan 20 gacha)</span>
+      </nav>
+      <div class="title">
+       <p> Men o'ylagan sonni top!</p>
+        <span class="oylanganSon">?</span>
+      </div>
+
+      <form class="FormBox">
+        <input type="number" class="guess" placeholder="" />
+        <button type="reset" class="reset"><img src="img/power-off.png" alt="" /></button>
+        <button type="button" class="buttonBlack tekwiriw">Tekshirish</button>
+      </form>
+      <div class="infoGame">
+        <div class="taxminQilish">Taxmin qlish...</div>
+        <div class="BallBox">
+          <p>💯 Ball: <span class="ball">20</span></p>
+          <p>🥇 Eng yuqori ball: <span class="yuqoriBall">0</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
 </html>
